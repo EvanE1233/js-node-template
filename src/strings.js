@@ -1,7 +1,21 @@
-const name = 'Evan Eachus'
-const course_name = 'Web Devolopment'
-const expected_grade = 85
-const status = name + ' In ' + course_name + ', striving to get at least a ' + expected_grade + '%'
-const better_status = `${name} in ${course_name}, striving to get at least a ${expected_grade}%`
-console.log(status)
-console.log(better_status)
+const student1 = {
+  name: 'Sarah',
+  course: 'Javascript',
+  grade: 95,
+}
+const student2 = {
+  name: 'John',
+  course: 'Python',
+  grade: 88,
+}
+const student3 = {
+  name: 'Alice',
+  course: 'C++',
+  grade: 92,
+}
+function displayStudentInfo(name, corse, grade) {
+  return `${name} is taking ${course} and expects to earn ${grade}%`
+}
+console.log(displayStudentInfo('Sarah', 'Javascript', 95))
+console.log(displayStudentInfo('John', 'Python', 88))
+console.log(displayStudentInfo('Alice', 'C++', 92))
